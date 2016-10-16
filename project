@@ -3,6 +3,4 @@ index.php - upload page
 download page
 admin panel - show all page
 mysql db
-
-param -3
-gurpreet -4
+mkdir function is used in php to create directories
