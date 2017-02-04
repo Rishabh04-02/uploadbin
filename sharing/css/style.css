@@ -1,6 +1,7 @@
 
 #header{
 background-color: #2f364a;
+width: 100%;
 font:#fff;
 
 }
@@ -22,7 +23,7 @@ padding-right: 3%;
 }
 #search{
 margin: 0;
-padding-left: 15%;
+padding-left: 35%;
 padding-top: 3%;
 padding-bottom: 3%;
 }

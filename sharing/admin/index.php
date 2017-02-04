@@ -3,6 +3,7 @@
 //this can have the dynamic capacity to display the latest added books
 //code below
 
+include_once 'header.php';
 //login file
 include_once 'login.php';
 

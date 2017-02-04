@@ -52,7 +52,7 @@ if(isset($_POST['btn-login']))
 	<td><h1>Login</h1></td>
 </tr>
 <tr>
-<td><input type="text" name="idd" placeholder="Unique id" title="Unique id" required /></td>
+<td><input type="text" name="idd" placeholder="Username" title="Unique id" required /></td>
 </tr>
 <tr>
 <td><input type="password" name="pass" placeholder="Password" title="Your password here please" required /></td>
