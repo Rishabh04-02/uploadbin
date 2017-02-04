@@ -1,3 +1,46 @@
+<?php
+//this file will be used for adding admins
+//this file will be intentionally made disfunctional after addition of 1 admin
+//can be corrected using the php coding
+//code below
+if(isset($_SESSION['user'])!="")
+{
+	header("Location: categories.php");
+}
+include_once 'dbconnect.php';
+
+if(isset($_POST['btn-signup']))
+{
+	$uname = mysql_real_escape_string($_POST['uname']);
+	$upass = md5(mysql_real_escape_string($_POST['pass']));
+	$email = mysql_real_escape_string($_POST['email']);
+	$fname = mysql_real_escape_string($_POST['fname']);
+	$roll = mysql_real_escape_string($_POST['roll']);
+	
+	$uname = trim($uname);
+	$upass = trim($upass);
+	$email = trim($email);
+	$fname = trim($fname);
+	$roll = trim($roll);
+	
+			
+	if(mysql_query("INSERT INTO users(uname,pswd,emaila,rollno) VALUES('$uname','$upass','$email','$roll')"))
+		{
+			header("Location:login.php");
+			?>
+			
+			<?php
+		}
+		else
+		{
+			?>
+			<script>alert('error while registering you...');</script>
+			<?php
+		}		
+	
+		
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,3 +108,4 @@ Confirm Password </label></br></br>
 </div>	
 </body>
 </html>	
+
