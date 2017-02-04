@@ -15,16 +15,16 @@ if(isset($_POST['btn-signup']))
 	$upass = md5(mysql_real_escape_string($_POST['pass']));
 	$email = mysql_real_escape_string($_POST['email']);
 	$name = mysql_real_escape_string($_POST['name']);
-	$phna = mysql_real_escape_string($_POST['phn']);
+	$phn = mysql_real_escape_string($_POST['phn']);
 	
 	$uname = trim($uname);
 	$upass = trim($upass);
 	$email = trim($email);
 	$name = trim($name);
-	$phna = trim($phna);
+	$phn = trim($phn);
 	
 			
-	if(mysql_query("INSERT INTO users(uname,pswd,name,email,mobile) VALUES('$uname','$upass','$name','$email','$phna')"))
+	if(mysql_query("INSERT INTO users(uname,pswd,name,email,mobile) VALUES('$uname','$upass','$name','$email','$phn')"))
 		{
 			mysql_query("CREATE TABLE `uploadbin`.`$uname` ( `bookid` INT(5) PRIMARY KEY AUTO_INCREMENT , `buy` INT(1) DEFAULT '0' , `chat` VARCHAR(40)) ENGINE = InnoDB");
 
