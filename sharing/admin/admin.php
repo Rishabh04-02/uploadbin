@@ -7,7 +7,7 @@
 //admin can message any user to follow the code of conduct and don't use the messaging/mailing service for wrong purposes
 //admin can delete/block any user
 //code below
-
+echo "This is admin.php";
 
 
 ?>
