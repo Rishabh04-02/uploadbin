@@ -24,7 +24,7 @@ if(isset($_POST['btn-signup']))
 	$phn = trim($phn);
 	
 			
-	if(mysql_query("INSERT INTO users(uname,pswd,name,email,mobile) VALUES('$uname','$upass','$name','$email','phn')"))
+	if(mysql_query("INSERT INTO users(uname,pswd,name,email,mobile) VALUES('$uname','$upass','$name','$email','$phn')"))
 		{
 			header("Location:login.php");
 			?>
