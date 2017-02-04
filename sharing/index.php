@@ -4,7 +4,7 @@
 //code below
 
 //login file
-include_once 'login.php';
+//include_once 'login.php';
 
 //registeration file
 include_once 'register.php';

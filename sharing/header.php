@@ -38,7 +38,7 @@ Password </label></br></br>
 <b><font color="#FF0000"> </b></font></br>
 <input type="submit" name="submit" value="Sign in" class="btn-submit"><br/><br/>
 <div class="submit-block">
-<a href="signup.php" class="link_sign_up">Sign up here  </a><span>or sign in with</span>
+<a href="register.php" class="link_sign_up">Sign up here  </a><span>or sign in with</span>
 <ul class="social-icon clearfix">
 
 </ul>
