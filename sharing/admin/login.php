@@ -12,7 +12,7 @@ if(isset($_SESSION['user'])!="")
 if(isset($_POST['btn-login']))
 {
 	$idd = mysql_real_escape_string($_POST['idd']);
-	$upass = mysql_real_escape_string($_POST['pass']);
+	$upass = md5(mysql_real_escape_string($_POST['pass']));
 	
 	$idd = trim($idd);
 	$upass = trim($upass);

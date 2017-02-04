@@ -12,7 +12,7 @@ include_once 'dbconnect.php';
 if(isset($_POST['btn-signup']))
 {
 	$uname = mysql_real_escape_string($_POST['uname']);
-	$upass = mysql_real_escape_string($_POST['pass']);
+	$upass = md5(mysql_real_escape_string($_POST['pass']));
 	
 	$uname = trim($uname);
 	$upass = trim($upass);
