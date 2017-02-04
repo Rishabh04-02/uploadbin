@@ -6,7 +6,7 @@ include_once 'dbconnect.php';
 
 if(isset($_SESSION['user'])!="")
 {
-	header("Location: categories.php");
+	header("Location: login.php");
 }
 
 if(isset($_POST['btn-login']))
@@ -25,7 +25,7 @@ if(isset($_POST['btn-login']))
 	if($count == 1 && $row['pswd']==($upass))
 	{
 		$_SESSION['user'] = $row['id'];
-	    header("Location: categories.php");
+	    header("Location: user.php");
       
 	}
 	else

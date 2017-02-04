@@ -3,7 +3,8 @@
 //this page is also dynamic
 //will receive post request from the categories page
 //code below
-
+include_once 'dbconnect.php';
+include_once 'header.php';
 
 
 
