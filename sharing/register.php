@@ -55,7 +55,7 @@ if(isset($_POST['btn-signup']))
 	<td><h1>Register</h1></td>
 </tr>
 <tr>
-<td><input name="uname" placeholder="Username" required /></td>
+<td><input name="uname" placeholder="Choose Username" required /></td>
 </tr>
 <tr>
 <td><input name="fname" placeholder="Your name" required /></td>
