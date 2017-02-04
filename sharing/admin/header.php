@@ -23,8 +23,11 @@
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<a href="logout.php"><button type="submit" class="btn btn-default">Logout</button></a>
      </div>     
+
 </div>
+
 
 </div>
 </div>	

@@ -14,5 +14,4 @@ if(!mysql_select_db("uploadbin"))
 }
 
 
-
 ?>
