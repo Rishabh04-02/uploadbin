@@ -8,9 +8,14 @@
 include_once 'dbconnect.php';
 include_once 'header.php';
 
-echo "This is the categories file<br>";
-echo "Welcome to the categories, after successful login<br>";
 
-while($out=mysqli_fetch_array($usrs[$i]))
+
+$res=mysql_query("SELECT * FROM categories");
+while($out=mysql_fetch_array($res))
+
+	{
+        $na=$out['catname'];
+        echo "$na<br>";        
+    }
 
 ?>
