@@ -5,6 +5,8 @@
 //dynamic fetching will be done
 //code below
 
+echo "This is the categories file<br>";
+echo "Welcome to the categories, after successful login<br>";
 
 
 
