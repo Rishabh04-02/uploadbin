@@ -30,14 +30,15 @@ if(isset($_POST['btn-signup']))
 
 //fetch the 
 			//mysql_query("SELECT id FROM idbook");
-			$result = mysql_query("SELECT id FROM idbook");
-			$data=mysql_fetch_assoc($result);
-			$da=$data['id'];
+			//$result = mysql_query("SELECT id FROM idbook");
+			//$data=mysql_fetch_assoc($result);
+			//$da=$data['id'];
 			
-			mysql_query("INSERT INTO $uname(bookid,buy,chat) VALUES('$da','0',NULL)");
+			//mysql_query("INSERT INTO $uname(bookid,buy,chat) VALUES('$da','0',NULL)");
 
-			$da=$data['id']+1;
-			mysql_query("UPDATE idbook SET id=$da");
+			//$da=$data['id']+1;
+			//mysql_query("UPDATE idbook SET id=$da");
+			
 
 			//redirect to login page
 			header("Location:login.php");

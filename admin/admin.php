@@ -35,4 +35,53 @@ echo "</code></h1>";
 print("</div>");
 
 ?>
+<?php
+if(isset($_POST['submit']))
+{
+    $delete=$_POST['delete'];
+    chdir('../dir');
+    $pathdir=getcwd();
+    $dir=$pathdir."/".$delete."/";
+    echo "$dir";
+function deletedir($dir)
+    {
+        if (is_dir($dir))
+        {
+            $files = scandir($dir);
+            foreach ($files as $file)
+            {
+                if ($file != "." && $file != "..")
+                {
+                    if (filetype($dir."/".$file) == "dir")
+                    {
+                        $this->deletedir($dir."/".$file);
+                    }
+                    else
+                    {
+                        unlink($dir."/".$file);
+                    }
+                }
+            }
+            reset($objects);
+            if(rmdir($dir))
+            {
+                return 'deleted successfully!';
+            }
+            else
+            {
+                return 'delete failed!';
+            }
+        }
+        else
+        {
+            return 'doesn\'t exist or inaccessible!';
+        }
+    }
 
+}
+?>
+<form method="post">
+<input type="text" name="delete" placeholder="dir name">
+<input type="submit" name="submit" value="Delete">
+<br/><br/>
+</form>
