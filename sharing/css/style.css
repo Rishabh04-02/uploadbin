@@ -48,3 +48,7 @@ margin:auto;
 margin-top:100px;
 margin-bottom:200px;
 }
+
+#fetch li
+li { color: blue; }
+li:nth-child(odd) { color: green; }

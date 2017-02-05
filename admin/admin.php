@@ -5,28 +5,34 @@
 //admin can delete any of the pasted content
 //code below
 include_once 'header.php';
+include_once 'dbconnect.php';
+
+
 
 print("<center>");
-print("<code><h3>Welcome Admin</h3><h1>The list of all available directories </h1></code>");
+print("<code><h3>Welcome Admin</h3><h3>The list of all available directories & files </h3></code>");
+print("</center>");
 
-
-//scanning direcroties
-$dir = "../dir/";
-
-// Open a directory, and read its contents
-if (is_dir($dir)){
-  if ($dh = opendir($dir)){
-    while (($file = readdir($dh)) !== false){
-      echo "<code><h4>" . $file . "</code> ";
-    }
-    closedir($dh);
-  }
-}
 
 //displaying contents of a particular directory
+print("<div id='fetch'");
+echo "<h1><code>";
+function listFolderFiles($dir){
+    $ffs = scandir($dir);
+    echo '<ol>';
+    foreach($ffs as $ff){
+        if($ff != '.' && $ff != '..'){
+            echo '<li>'.$ff;
+            if(is_dir($dir.'/'.$ff)) listFolderFiles($dir.'/'.$ff);
+            echo '</li>';
+        }
+    }
+    echo '</ol>';
+}
 
+listFolderFiles('../dir/');
+echo "</code></h1>";
+print("</div>");
 
-print("<code><h3>Display contents of a particular directory</h3></code>");
-
-print("</center>");
 ?>
+
