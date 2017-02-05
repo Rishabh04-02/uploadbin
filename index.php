@@ -32,7 +32,12 @@ if(isset($_POST['submit-it']))
 			//upload code here
 			if(empty($errors)==true) {
         	 move_uploaded_file($file_tmp,"dir/$da/".$file_name);
-         	echo "<center>Success</center>";
+         	echo "<br><br><center><b>Success</b> - ";
+         	echo "Your file has been uploaded to the below url<br>";
+         	$actual_link = "http://$_SERVER[HTTP_HOST]";
+         	$loc="/uploadbin/dir/$da/".$file_name;
+         	echo "<code>$actual_link$loc</code>";
+         	echo "</center>";
       		}
       		else{
          	print_r($errors);
