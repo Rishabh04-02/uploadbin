@@ -35,15 +35,15 @@ echo "</code></h1>";
 print("</div>");
 
 ?>
-<?php
-if(isset($_POST['submit']))
+<!--<?php
+/*if(isset($_POST['submit']))
 {
     $delete=$_POST['delete'];
     chdir('../dir');
     $pathdir=getcwd();
     $dir=$pathdir."/".$delete."/";
-    echo "$dir";
-function deletedir($dir)
+    echo "$dir";w
+/*function deletedir($dir)
     {
         if (is_dir($dir))
         {
@@ -76,10 +76,10 @@ function deletedir($dir)
         {
             return 'doesn\'t exist or inaccessible!';
         }
-    }
+    }*/
 
 }
-?>
+?>-->
 <form method="post">
 <input type="text" name="delete" placeholder="dir name">
 <input type="submit" name="submit" value="Delete">

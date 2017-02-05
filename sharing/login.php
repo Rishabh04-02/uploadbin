@@ -24,7 +24,7 @@ if(isset($_POST['btn-login']))
 	
 	if($count == 1 && $row['pswd']==($upass))
 	{
-		$_SESSION['user'] = $row['id'];
+		$_SESSION['user'] = $row['uname'];
 	    header("Location: user.php");
       
 	}

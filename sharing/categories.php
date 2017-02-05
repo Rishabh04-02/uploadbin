@@ -15,7 +15,11 @@ while($out=mysql_fetch_array($res))
 
 	{
         $na=$out['catname'];
-        echo "$na<br>";        
+        $catid=$out['catid'];
+        echo "<a href='book.php?=$catid'>$na</a><br>";        
+        
+
+
     }
 
 ?>
