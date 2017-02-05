@@ -25,6 +25,10 @@ if(isset($_POST['submit-it']))
 			$result = mysql_query("SELECT id FROM dirname");
 			$data=mysql_fetch_assoc($result);
 			$da=$data['id'];
+ 
+ //adding entry to other database
+   
+
 
 			//creating directory
 			mkdir("dir/$da", 0777);
@@ -37,7 +41,13 @@ if(isset($_POST['submit-it']))
          	$actual_link = "http://$_SERVER[HTTP_HOST]";
          	$loc="/uploadbin/dir/$da/".$file_name;
          	echo "<code>$actual_link$loc</code>";
-         	echo "</center>";
+          echo "</center>";
+          $put=$actual_link.$loc;
+          //echo "$put";
+          //mysql_query("UPDATE dircontent SET id='$da'");
+          //mysql_query("UPDATE dircontent SET location='$put' Where id='$da'");
+         	
+
       		}
       		else{
          	print_r($errors);
