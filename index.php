@@ -58,6 +58,10 @@ if(isset($_POST['submit-it']))
 
 ?>
 <center><br/>
+<code>
+	<h1>Welcome to Uploadbin Project</h1>
+	<h2><a href="sharing/">Navigate to Bookhub Project</a></h2>
+</code>
 <form method="post" enctype="multipart/form-data">
     Select file to upload:
     <input type="file" name="file" id="fileToUpload">

@@ -17,13 +17,11 @@
      </div>
      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
      
-	 <form class="navbar-form navbar-left" role="search" id="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search" id="in">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-<a href="sharing/"><button type="submit" class="btn btn-default">Bookhub</button></a>
+	 <div class="navbar-form navbar-left" role="search" id="search">
+  <img src="sharing/images/logo.png" id="logoimg"/><a href="sharing/">Bookhub</a>
+
+</div>
+
      </div>     
 </div>
 
