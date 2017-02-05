@@ -3,6 +3,8 @@
 //this file will allow admin to see all the pasted contents
 //admin can delete any of the pasted content
 //code below
+include_once 'header.php';
+echo "this is the admin.php file<br>";
 
 
 ?>
