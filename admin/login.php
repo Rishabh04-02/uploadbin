@@ -48,7 +48,7 @@ if(isset($_POST['btn-login']))
 <center>
 <div id="login-form">
 <form method="post">
-<table align="left" width="35%" border="0">
+<table align="center"  border="0">
 <tr>
 	<td><h1>Login</h1></td>
 </tr>

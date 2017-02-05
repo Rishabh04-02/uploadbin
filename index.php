@@ -17,7 +17,7 @@ if(isset($_POST['submit-it']))
       
       
       if($file_size > 20971520) {
-         $errors[]='File size must be excately 2 GB';
+         $errors[]='File size must be <= 2 GB';
       }
 
 
@@ -59,14 +59,17 @@ if(isset($_POST['submit-it']))
 ?>
 <center><br/>
 <code>
-	<h1>Welcome to Uploadbin Project</h1>
+	<h1>Welcome to Uploadbin</h1>
+  <h4>Upload your files & share with others over Intranet<br/> with the premium speed of over 50 Mbps.</h4>
 	<h2><a href="sharing/">Navigate to Bookhub Project</a></h2>
 </code>
-<form method="post" enctype="multipart/form-data">
+<div id="mainfor">
+<form method="post" id="signin_form" enctype="multipart/form-data">
     Select file to upload:
     <input type="file" name="file" id="fileToUpload">
     <input type="submit" value="Upload File" name="submit-it">
 </form>
+</div>
 </center>
 
 </body>

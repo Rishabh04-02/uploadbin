@@ -6,7 +6,7 @@
 //code below
 include_once 'header.php';
 include_once 'dbconnect.php';
-
+print("<a href='logout.php'><button id='righ' >Logout</button></a>");
 
 
 print("<center>");

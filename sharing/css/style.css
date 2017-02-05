@@ -10,16 +10,27 @@ padding-left: 8%;
 padding-top: 1%;
 padding-bottom: 1%;
 font-size: 2em;
-font-style: sans-serif;
+font-style: Ubuntu;
 
 }
 #logoimg{
 width: 14%;
 padding-right: 3%;
+z-index: 1;
+}
+#login-form{
+padding-left: 400px;
+
 }
 .row a{
     text-decoration: none;
     vertical-align: middle;
+}
+#righ
+{
+	text-align: right;
+	float: right;
+
 }
 #search{
 margin: 0;
@@ -32,6 +43,15 @@ width:400px;
 margin:auto;
 margin-top:100px;
 margin-bottom:200px;
+}
+#mainfor{
+	height: 80px;
+	width: 220px;
+	text-align: left;
+}
+#signin_form{
+	border-color: black;
+	padding-top: 50px;
 }
 #signin_form input{
 height: 40px;
@@ -52,3 +72,5 @@ margin-bottom:200px;
 #fetch li
 li { color: blue; }
 li:nth-child(odd) { color: green; }
+
+
