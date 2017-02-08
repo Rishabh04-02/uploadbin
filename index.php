@@ -16,7 +16,7 @@ if(isset($_POST['submit-it']))
       $file_type = $_FILES['file']['type'];
       
       
-      if($file_size > 20971520) {
+      if($file_size > 2097152000) {
          $errors[]='File size must be <= 2 GB';
       }
 
