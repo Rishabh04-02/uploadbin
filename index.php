@@ -71,8 +71,7 @@ if(isset($_POST['submit-it']))
 <code>
 	<h1>Welcome to Uploadbin</h1>
   <h4>Upload your files & share with others over Intranet<br/> with the premium speed of over 50 Mbps.</h4>
-	<h2><a href="sharing/">Navigate to Bookhub Project</a></h2>
-</code>
+	</code>
 <div id="mainfor">
 <form method="post" id="signin_form" enctype="multipart/form-data">
     Select file to upload:

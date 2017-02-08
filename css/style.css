@@ -1,0 +1,76 @@
+
+#header{
+background-color: #2f364a;
+width: 100%;
+font:#fff;
+
+}
+#logo{
+padding-left: 8%;
+padding-top: 1%;
+padding-bottom: 1%;
+font-size: 2em;
+font-style: Ubuntu;
+
+}
+#logoimg{
+width: 14%;
+padding-right: 3%;
+z-index: 1;
+}
+#login-form{
+padding-left: 100px;
+
+}
+.row a{
+    text-decoration: none;
+    vertical-align: middle;
+}
+#righ
+{
+	text-align: right;
+	float: right;
+
+}
+#search{
+margin: 0;
+padding-left: 35%;
+padding-top: 3%;
+padding-bottom: 3%;
+}
+.login{
+width:400px;
+margin:auto;
+margin-top:100px;
+margin-bottom:200px;
+}
+#mainfor{
+	height: 80px;
+	width: 220px;
+	text-align: left;
+}
+#signin_form{
+	border-color: black;
+	padding-top: 50px;
+}
+#signin_form input{
+height: 40px;
+width:100%;
+border-color:#3498db;
+border-radius: 5px;
+}
+.btn-submit{
+background-color: #3498db;
+}
+.register{
+width:400px;
+margin:auto;
+margin-top:100px;
+margin-bottom:200px;
+}
+
+#fetch li
+li { color: blue; }
+li:nth-child(odd) { color: green; }
+
+
