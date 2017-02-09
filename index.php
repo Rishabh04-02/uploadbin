@@ -50,12 +50,12 @@ if(isset($_POST['submit-it']))
 			//upload code here
 			if(empty($errors)==true) {
         	 move_uploaded_file($file_tmp,"dir/$da/".$file_name);
-         	echo "<br><br><center><b><h2>Success</b> - ";
+         	echo "<br><br><center><b><h3>Success</b> - ";
          	echo "Your file has been uploaded to the below url<br>";
          	$actual_link = "http://$_SERVER[HTTP_HOST]";
          	$loc="/uploadbin/dir/$da/".$file_name;
          	echo "<code>$actual_link$loc</code>";
-          echo "</h2></center>";
+          echo "</h3></center>";
           $put=$actual_link.$loc;
           //echo "$put";
           //mysql_query("UPDATE dircontent SET id='$da'");
@@ -89,7 +89,7 @@ if(isset($_POST['submit-it']))
                 <div id="my-tab-content" class="tab-content">
             <div class="tab-pane active" id="login">
                       
-                    <form class="form-signin" method="post">
+                    <form class="form-signin" method="post" action="index.php">
                     Select file to upload :
                 <input type="file" class="form-control  btn btn-block" placeholder="upload file" required>
                 <input type="submit" class="btn btn-lg btn-default btn-block" value="Upload File" name="submit-it">
