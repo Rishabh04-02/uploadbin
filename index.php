@@ -78,7 +78,7 @@ if(isset($_POST['submit-it']))
 <div id="mainfor">
 <form method="post" id="signin_form" enctype="multipart/form-data">
     Select file to upload:
-    <input type="file" name="file" id="fileToUpload">
+    <input type="file" name="file" id="fileToUpload" required >
     <input type="submit" value="Upload File" name="submit-it">
 </form>
 </div>
