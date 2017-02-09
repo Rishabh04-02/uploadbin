@@ -1,7 +1,6 @@
 
 #header{
 background-color: #2f364a;
-width: 100%;
 font:#fff;
 
 }
@@ -34,7 +33,7 @@ padding-left: 100px;
 }
 #search{
 margin: 0;
-padding-left: 35%;
+padding-left: 55%;
 padding-top: 3%;
 padding-bottom: 3%;
 }
