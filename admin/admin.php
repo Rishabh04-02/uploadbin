@@ -21,7 +21,7 @@ include_once 'dbconnect.php';
     if($count == 1 && $row['pswd']==($upass))
     {
               
-        //header("Location: admin.php");
+        
       
     }
     else
@@ -29,7 +29,7 @@ include_once 'dbconnect.php';
         ?>
         <script>alert('Username / Password Seems Wrong !');</script>
         <?php
-        header("Location: login.php");
+        header("Location: index.php");
     }
     
 }
@@ -44,11 +44,14 @@ include_once 'dbconnect.php';
 //admin can delete any of the pasted content
 //code below
 
-
+if($count!=1)
+{
+    header("Location: index.php");
+}
 
 
 print("<center>");
-print("<code><h3>Welcome Admin</h3><h3>The list of all available directories & files </h3></code>");
+print("<code><h3>Welcome Admin <b>$idd</b> </h3><h3>The list of all available directories & files </h3></code>");
 print("</center>");
 
 
