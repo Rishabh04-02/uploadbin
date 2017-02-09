@@ -45,16 +45,17 @@ if(isset($_POST['submit-it']))
 
 			//creating directory
 			mkdir("dir/$da", 0777);
+      chmod("dir/$da", 0777); 
 		
 			//upload code here
 			if(empty($errors)==true) {
         	 move_uploaded_file($file_tmp,"dir/$da/".$file_name);
-         	echo "<br><br><center><b>Success</b> - ";
+         	echo "<br><br><center><b><h2>Success</b> - ";
          	echo "Your file has been uploaded to the below url<br>";
          	$actual_link = "http://$_SERVER[HTTP_HOST]";
          	$loc="/uploadbin/dir/$da/".$file_name;
          	echo "<code>$actual_link$loc</code>";
-          echo "</center>";
+          echo "</h2></center>";
           $put=$actual_link.$loc;
           //echo "$put";
           //mysql_query("UPDATE dircontent SET id='$da'");
