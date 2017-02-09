@@ -70,19 +70,34 @@ if(isset($_POST['submit-it']))
 
 
 ?>
-<center><br/>
+<div class="container">
+  <div class="jumbotron">
+    <center>
 <code>
-	<h1>Welcome to Uploadbin</h1>
+  <h1>Welcome to Uploadbin</h1>
   <h4>Upload your files & share with others over Intranet<br/> with the premium speed of over 50 Mbps.</h4>
-	</code>
-<div id="mainfor">
-<form method="post" id="signin_form" enctype="multipart/form-data">
-    Select file to upload:
-    <input type="file" name="file" id="fileToUpload" required >
-    <input type="submit" value="Upload File" name="submit-it">
-</form>
-</div>
+  </code>
 </center>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="account-wall">
+                <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="login">
+                      
+                    <form class="form-signin" method="post">
+                    Select file to upload :
+                <input type="file" class="form-control  btn btn-block" placeholder="upload file" required>
+                <input type="submit" class="btn btn-lg btn-default btn-block" value="Upload File" name="submit-it">
+                    </form>
+          </div>
+            </div>
+            </div>
+        </div>
+    </div>
 
+</div>
+  
+</div>
 </body>
 </html>	
