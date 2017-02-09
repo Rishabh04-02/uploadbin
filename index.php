@@ -26,7 +26,7 @@ if(isset($_POST['submit-it']))
       $file_type = $_FILES['file']['type'];
 
       //replacing spaces from file name with underscorer
-      $file_name = str_replace(' ', '_', $file_name);
+      //$file_name = str_replace(' ', '_', $file_name);
       
       
       if($file_size > 2097152000) {
