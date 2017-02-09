@@ -14,6 +14,8 @@ if(isset($_POST['submit-it']))
       $file_size = $_FILES['file']['size'];
       $file_tmp = $_FILES['file']['tmp_name'];
       $file_type = $_FILES['file']['type'];
+
+      $file_name = trim($file_name);
       
       
       if($file_size > 2097152000) {
