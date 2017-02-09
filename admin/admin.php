@@ -1,12 +1,15 @@
-
+<?php include_once 'headeradmin.php';
+include_once 'dbconnect.php';
+?>
+<div class="container">
+  <div class="jumbotron">
 <?php
 //this is the main admin.php file
 //this file will allow admin to see all the pasted contents
 //admin can delete any of the pasted content
 //code below
-include_once 'header.php';
-include_once 'dbconnect.php';
-print("<a href='logout.php'><button id='righ' >Logout</button></a>");
+
+
 
 
 print("<center>");
@@ -41,3 +44,5 @@ print("</div>");
 <input type="submit" name="submit" value="Delete">
 <br/><br/>
 </form>
+</div>
+</div>
