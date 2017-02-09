@@ -1,42 +1,3 @@
-<?php
-//this is the file used for logins by admin
-//code below
-
-include_once 'dbconnect.php';
-
-
-
-if(isset($_POST['btn-login']))
-{
-	$idd = mysql_real_escape_string($_POST['idd']);
-	$upass = md5(mysql_real_escape_string($_POST['pass']));
-	
-	$idd = trim($idd);
-	$upass = trim($upass);
-	
-	$res=mysql_query("SELECT uname, pswd FROM admin WHERE uname='$idd'");
-	$row=mysql_fetch_array($res);
-	
-	$count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
-	
-	if($count == 1 && $row['pswd']==($upass))
-	{
-		
-		session_start();
-		$_SESSION['user'] = $_POST['idd'];
-	    header("Location: admin.php");
-      
-	}
-	else
-	{
-		?>
-        <script>alert('Username / Password Seems Wrong !');</script>
-        <?php
-	}
-	
-}
-?>
-
 <!DOCTYPE html>
 <head>
 <title>login - Bookhub</title>
@@ -45,7 +6,7 @@ if(isset($_POST['btn-login']))
 <body>
 <center>
 <div id="login-form">
-<form method="post">
+<form method="post" action="admin.php">
 <table align="center"  border="0">
 <tr>
 	<td><h1>Login</h1></td>

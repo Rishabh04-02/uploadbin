@@ -3,10 +3,36 @@ include_once 'dbconnect.php';
 
 
 
-    if(!isset($_SESSION['user']))
+   if(isset($_POST['btn-login']))
+{
+    session_start();
+    $_SESSION['user'] = $_POST['idd'];
+    $idd = mysql_real_escape_string($_POST['idd']);
+    $upass = md5(mysql_real_escape_string($_POST['pass']));
+    
+    $idd = trim($idd);
+    $upass = trim($upass);
+    
+    $res=mysql_query("SELECT uname, pswd FROM admin WHERE uname='$idd'");
+    $row=mysql_fetch_array($res);
+    
+    $count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
+    
+    if($count == 1 && $row['pswd']==($upass))
     {
-        
+              
+        //header("Location: admin.php");
+      
     }
+    else
+    {
+        ?>
+        <script>alert('Username / Password Seems Wrong !');</script>
+        <?php
+        header("Location: login.php");
+    }
+    
+}
 
 
 ?>
