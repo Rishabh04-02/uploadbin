@@ -7,7 +7,9 @@ include_once 'dbconnect.php';
 
 if(isset($_SESSION['user'])!="")
 {
+	session_start();
 	header("Location: admin.php");
+
 }
 
 if(isset($_POST['btn-login']))
@@ -26,6 +28,7 @@ if(isset($_POST['btn-login']))
 	if($count == 1 && $row['pswd']==($upass))
 	{
 		$_SESSION['user'] = $row['id'];
+		session_start();
 	    header("Location: admin.php");
       
 	}

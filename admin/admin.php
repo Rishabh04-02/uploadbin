@@ -1,5 +1,13 @@
 <?php include_once 'headeradmin.php';
 include_once 'dbconnect.php';
+
+session_start();
+
+    if(!isset($_SESSION['user']))
+    {
+        header("Location:index.php");
+    }
+    
 ?>
 <div class="container">
   <div class="jumbotron">
