@@ -51,7 +51,7 @@ if($count!=1)
 
 
 print("<center>");
-print("<code><h3>Welcome Admin <b>$idd</b> </h3><h3>The list of all available directories & files </h3></code>");
+print("<code><h3>Welcome Admin  </h3><h3>The list of all available directories & files </h3></code>");
 print("</center>");
 
 
