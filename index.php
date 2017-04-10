@@ -35,8 +35,8 @@ if(isset($_POST['submit-it']))
 
 
 //database dir name fetch
-			$result = mysql_query("SELECT id FROM dirname");
-			$data=mysql_fetch_assoc($result);
+			$result = mysqli_query("SELECT id FROM dirname");
+			$data=mysqli_fetch_assoc($result);
 			$da=$data['id'];
  
  //adding entry to other database
@@ -68,7 +68,7 @@ if(isset($_POST['submit-it']))
       			}
 
 			$da=$data['id']+1;
-			mysql_query("UPDATE dirname SET id=$da");
+			mysqli_query("UPDATE dirname SET id=$da");
       
 	}
 	else
