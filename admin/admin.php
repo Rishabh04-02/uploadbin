@@ -7,16 +7,16 @@ include_once 'dbconnect.php';
 {
     session_start();
     $_SESSION['user'] = $_POST['idd'];
-    $idd = mysql_real_escape_string($_POST['idd']);
-    $upass = md5(mysql_real_escape_string($_POST['pass']));
+    $idd = mysqli_real_escape_string($_POST['idd']);
+    $upass = md5(mysqli_real_escape_string($_POST['pass']));
     
     $idd = trim($idd);
     $upass = trim($upass);
     
-    $res=mysql_query("SELECT uname, pswd FROM admin WHERE uname='$idd'");
-    $row=mysql_fetch_array($res);
+    $res=mysqli_query("SELECT uname, pswd FROM admin WHERE uname='$idd'");
+    $row=mysqli_fetch_array($res);
     
-    $count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
+    $count = mysqli_num_rows($res); // if uname/pass correct it returns must be 1 row
     
     if($count == 1 && $row['pswd']==($upass))
     {
