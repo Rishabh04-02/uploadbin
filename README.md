@@ -7,7 +7,7 @@
 Simply clone this repo!
 
 ```
-git clone https://github.com/Rishabh04-02/uploadbin.git``
+git clone https://github.com/Rishabh04-02/uploadbin.git
 ```
 
 ## Usage
@@ -28,4 +28,4 @@ When deploying to location which is reachable from the internet, please consider
 PRs accepted.
 
 ## License
-No License yet.````
+No License yet.
