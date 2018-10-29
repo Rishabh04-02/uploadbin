@@ -16,7 +16,6 @@ This is a rather simple php application. For testing purposes you can run for ex
 
 ```
 php -S 127.0.0.1:8080
-
 ```
 
 Go to your browser on localhost:8080 and check the app out!
